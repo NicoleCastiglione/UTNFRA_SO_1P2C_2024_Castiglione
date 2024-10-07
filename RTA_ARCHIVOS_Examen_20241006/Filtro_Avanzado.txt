@@ -1,0 +1,4 @@
+Mi IP Publica es: 186.23.243.113
+Mi usuario es: nicolecastiglione
+El Hash de mi usuario es: $6$76o4YJqjboq7sA0v$JQPpBv/32mX4an3gzNxogoJK9Wo5AdNUGhIcoz080NI1W.hPVuk3km4PN9i2JnVScsA/IOu9Kw85qpdiE7S2g/
+La URL de mi repositorio es: https://github.com/NicoleCastiglione/UTNFRA_SO_1P2C_2024_Castiglione.git
