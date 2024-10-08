@@ -1,0 +1,1032 @@
+sudo apt update
+clear
+sudo apt install tasksel
+sudo apt install ubuntu-desktop
+clear
+sudo reboot now
+cd repogit/
+cd TP_AySO/
+git log
+cd repogit/TP_AySO/
+cat << EOF >> README.md
+Alumno: Nicole Castiglione
+División: 318
+Turno: Noche
+EOF
+
+cat README.md 
+sed -i 's/# TP_AySOAlumno/# TP_AySO\nAlumno:/' README.md
+cat README.md 
+git add .
+git commit -m "docs: Se incluye información del alumno"
+git push
+ls
+sed -i 's/::/:/g' README.md
+cat README.md 
+git add .
+git commit -m "fix: Se corrige error de tipeo"
+git push
+cat ~/.bash_history
+history -a
+cd repogit/TP_AySO/
+cat > Historial_comandos_NicoleCastiglione.txt << EOF
+La VM se tildó en dos oportunidades y tuve que reiniciarla para seguir mi trabajo. Gracias a los commits no perdí el trabajo pero si el historial completo de comandos. Los especifico a continuacion:  ssh-keygen cat $HOME/.ssh/id_ed25519.pub cd  mkrdir repogit cd repogit  git clone git@github.com:NicoleCastiglione/TP_AySO.git cd TP_AySO pwd ls -l cat /etc/os-release man grep grep HOME_URL /etc/os-release grep home_url  /etc/os-release grep -i Home_url /etc/os-release
+whoami echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt
+Git add . (No hice el git config porque ya tenia mi usuario de git configurado) git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt" git status git push grep "model name" /proc/cpuinfo | head -n 1 >> datos_usuario.txt
+cat datos_usuario.txt cat /proc/cpuinfo lscpu | grep "Model name"
+lscpu  echo "No hay información del modelo de la CPU." >> datos_usuario.txt cat datos_usuario.txt git add .
+Git commit -m “feat: Añadiendo información de CPU git push man grep  grep -v "nologin" /etc/passwd | sort -t: -k7 | head -n 10 > lista_ordenada
+cat lista_ordenada
+Git add .
+Git commit -m “ADD: Listado de usuarios ordenado” git push
+
+
+cd repogit/T
+cd repogit/TP_AySO/
+cat << EOF > lista_completa_comandos.txt
+La VM se tildó en dos oportunidades y tuve que reiniciarla para seguir mi trabajo. Gracias a los commits no perdí el trabajo pero sí el historial completo de comandos, por lo que los escribí nuevamente para poder incluirlos:
+
+ssh-keygen
+cat \$HOME/.ssh/id_ed25519.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:NicoleCastiglione/TP_AySO.git
+cd TP_AySO
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+whoami
+echo "Usuario=\$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt
+Git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n 1 >> datos_usuario.txt
+cat datos_usuario.txt
+cat /proc/cpuinfo
+lscpu | grep "Model name"
+lscpu
+echo "No hay información del modelo de la CPU." >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m “feat: Añadiendo información de CPU"
+git push
+man grep
+grep -v "nologin" /etc/passwd | sort -t: -k7 | head -n 10 > lista_ordenada
+cat lista_ordenada
+git add .
+git commit -m “ADD: Listado de usuarios ordenado”
+git push
+man -k dump
+echo "Comando para realizar un dump traffic: tcpdump" > comando_dump_net
+echo "Para buscar este comando: man -k dump" >> comando_dump_net
+cat comando_dump_net
+git add .
+git commit -m “ADD: Comando para Capturar y analizar el tráfico de red”
+git push
+cat << EOF >> README.md
+Alumno: Nicole Castiglione
+División: 318
+Turno: Noche
+EOF
+
+cat README.md
+sed -i 's/# TP_AySOAlumno/# TP_AySO\nAlumno:/' README.md
+cat README.md
+git add .
+git commit -m "docs: Se incluye información del alumno"
+git push
+ls
+sed -i 's/::/:/g' README.md
+cat README.md
+git add .
+git commit -m "fix: Se corrige error de tipeo"
+git push
+cat ~/.bash_history
+history -a
+cp ~/.bash_history "Historial_comandos_NicoleCastiglione.txt"
+git add .
+git commit -m "docs: Añadiendo historial incompleto de comandos"
+git push
+Otros comandos que utilicé en reiteradas ocasiones:
+git log
+clear
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+cd repogit/
+cd TP_AySO/
+git status
+clear
+source ~/.bashrc
+history -a
+history
+clear
+history
+clear
+source ~/.bashrc
+history
+sudo fdisk -l
+sudo visudo
+sudo fdisk -l
+sudo visudo
+sudo fdisk -l
+sudo visudo
+whoami
+sudo fdisk -l
+whoami 
+sudo fdisk -l
+sudo visudo
+sudo fdisk -l
+sudo visudo
+sudo fdisk -l
+sudo apt update
+sudo apt install tree
+git --version
+clear
+tree .
+cd repogit/
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone https://github.com/NicoleCastiglione/UTNFRA_SO_1P2C_2024_Castiglione.git
+ls
+clear
+source ~/.bashrc
+history
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+~/.bashrc && history -a
+source ~/.bashrc && history -a
+ls -l ./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh 
+ls -l ~/.bashrc
+chmod u+w ~/.bashrc
+ls -l ~/.bashrc
+ls -ld ~
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+source ~/.bashrc && history -a
+ls
+cd UTN-FRA_SO_Examenes/
+LS
+ls
+history
+clear
+cd ..
+tree UTNFRA_SO_1P2C_2024_Castiglione/
+cd ..
+cd
+cd ..
+pwd
+source ~/.bashrc
+history
+clear
+pwd
+mkdir -p Examenes-UTN/{alumno_{1..3}/parcial_{1..3},profesores}
+clear
+pwd
+mkdir -p /Examenes-UTN/{alumno_{1..3}/parcial_{1..3},profesores}
+sudo mkdir -p Examenes-UTN/{alumno_{1..3}/parcial_{1..3},profesores}
+ls
+cd Examenes-UTN/
+ls
+cd alumno_1/
+ls
+cd ..
+tree
+clear
+ls
+cd Examenes-UTN/
+tree
+cd ..
+tree Examenes-UTN/
+tree .
+clear
+ls
+cd Examenes-UTN/
+cd ..
+tree Examenes-UTN/
+rm -rf Examenes-UTN/
+sudo rm -rf Examenes-UTN/
+ls
+cd 
+pwd
+sudo mkdir -p /Examenes-UTN/{alumno_{1..3}/parcial_{1..3},profesores}
+tree /Examenes-UTN/
+history
+source ~/.bashrc
+history | grep 210
+history | grep 210 | grep -v history
+history | grep 210 | grep -v history | awk -F " " '{print $2}'
+ls
+clear
+mkdir -p test/testchild
+tree test/
+ls
+clear
+touch test.sh
+ls
+history
+history | grep 219 | grep -v history
+history | grep 219 | grep -v history >> test.sh 
+cat test.sh 
+clear
+rm -rf test/
+ls
+clear
+./test.sh
+sudo ./test.sh
+test.sh
+bash test.sh 
+vim test.sh 
+bash test.sh 
+clear
+ls
+tree test
+clear
+touch test_2.sh
+mkdir -p carpeta1
+mkdir -p carpeta2
+history
+history | sed -n '244,245p' | awk '{$1=""; print $0}' | sed 's/^ //'
+history | sed -n '244,245p' | awk '{$1=""; print $0}' | sed 's/^ //' >> test_2.sh 
+clear
+cat test_2.sh 
+clear
+ls
+rm -rf carpeta1 carpeta2
+ls
+clear
+bash test_2.sh 
+ls
+rm -rf carpeta1 carpeta2
+history
+history | sed -n '245p' | awk '{$1=""; print $0}' | sed 's/^ //'
+history | sed -n '245' | awk '{$1=""; print $0}' | sed 's/^ //'
+clear
+ls
+rm -rf test/ test_2.sh test.sh 
+ls
+clear
+cd 
+clear
+hisotry
+history
+history | sed -n '210p' | awk '{$1=""; print $0}' | sed 's/^ //'
+ls
+cd repogit/
+ls
+tree UTNFRA_SO_1P2C_2024_Castiglione/
+history | sed -n '210p' | awk '{$1=""; print $0}' | sed 's/^ //' >> UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_A.sh 
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_A.sh
+cat Punto_A.sh
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+LS
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+cd Punto_A.sh
+cat Punto_A.sh
+cd ..
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+git add .
+git status
+cd ..
+git ad .
+git add .
+clear
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+git status
+git commit -m "ADD: Se agrega estructura de archivos y Punto_A.sh resuelto"
+git push
+cd ..
+lsblk
+cd ..
+sudo fdisk -l
+fdisk /dev/vdb
+sudo fdisk /dev/vdb
+sudo fdisk -l /dev/vdb
+mkfs.ext4 /dev/vdb1 /dev/vdb2 
+sudo fdisk -l /dev/vdb
+mkfs.ext4 /dev/vdb1 
+sudo mkfs.ext4 /dev/vdb1 
+sudo fdisk -l /dev/vdb
+sudo mkfs.ext4 /dev/vdb2
+sudo mkfs.ext4 /dev/vdb3
+sudo mkfs.ext4 /dev/vdb5
+sudo mkfs.ext4 /dev/vdb6
+sudo mkfs.ext4 /dev/vdb7
+sudo mkfs.ext4 /dev/vdb8
+sudo mkfs.ext4 /dev/vdb9
+sudo mkfs.ext4 /dev/vdb10
+sudo mkfs.ext4 /dev/vdb11
+lsblk
+lsblk -f
+sudo vim /etc/fstab
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+cd RTA_ARCHIVOS_Examen_20241006/
+LS
+ls
+cd ..
+ls
+cd /Examenes-UTN/
+ls
+tree .
+cd alumno_1/parcial_1
+pwd
+lsblk -f
+clear
+lsblk -f
+clear
+cd /Examenes-UTN/alumno_1/parcial_1/
+clear
+pwd
+clear
+lsblk -f
+clear
+sudo fdisk -l /dev/vdb
+clear
+cd 
+clear
+sudo vim /etc/fstab 
+cat /etc/fstab 
+mount -a
+sudo mount -a
+clear
+sudo mount -a
+clear
+cat /etc/fstab 
+clear
+lsblk -f
+ls /Examenes-UTN/profesores/
+clear
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/
+ls
+cat Punto_B.sh 
+cat Punto_A.sh 
+clear
+cd 
+clear
+history
+history | sed -n '302,361p' | awk '{$1=""; print $0}' | sed 's/^ //'
+history | sed -n '302,361p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_B.sh 
+clear
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_B.sh 
+clear
+git add .
+clear
+ls
+cd repogit/
+clear
+ls
+git status
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+clear
+git status
+git add .
+git commit -m "ADD: Se agrega el punto B completo"
+git push
+clear
+cd 
+clear
+source ~/.bashrc
+history
+cd 
+mkdir Scripts
+ls
+cd Scripts/
+touch crear_usuario.sh
+vim crear_usuario.sh 
+touch obtener_usuarios.sh
+vim obtener_usuarios.sh 
+touch obtener_password.sh
+vim obtener_password.sh 
+cd ..
+sudo groupadd p1c2_2024_gAlumno 
+sudo groupadd p1c2_2024_gProfesores
+bash Scripts/crear_usuario.sh 
+bash Scripts/obtener_password.sh nicolecastiglione
+bash Scripts/obtener_password.sh p1c2_2024_A1
+bash Scripts/crear_usuario.sh 
+history
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+ll
+cd ..
+ls -l /Examenes-UTN/alumno_
+cd ..
+ls -l /Examenes-UTN/alumno_
+ls -l Examenes-UTN/_
+ls -l Examenes-UTN
+cd ~
+pwd
+chown p1c2_2024_A1:p1c2_2024_A1 /Examenes-UTN/alumno_1
+cd ..
+ls -l Examenes-UTN
+cd 
+cd ~
+sudo chown p1c2_2024_A1:p1c2_2024_A1 /Examenes-UTN/alumno_1
+cd ..
+ls -l Examenes-UTN
+cd ~
+pws
+pwd
+sudo chown p1c2_2024_A2:p1c2_2024_A2 /Examenes-UTN/alumno_2
+sudo chown p1c2_2024_A3:p1c2_2024_A3 /Examenes-UTN/alumno_3
+sudo chown p1c2_2024_P1:p1c2_2024_gProfesores /Examenes-UTN/profesores
+cd ..
+ls -l Examenes-UTN/
+cd ~
+pwd
+sudo chmod 770 /Examenes-UTN/alumno_1
+sudo ls -l /Examenes-UTN/alumno_1
+cd ..
+ls -l E
+ls -l Examenes-UTN/
+cd ~
+sudo chmod 750 /Examenes-UTN/alumno_1
+cd ..
+ls -l Examenes-UTN/
+cd ~
+sudo chmod 760 /Examenes-UTN/alumno_2
+sudo chmod 700 /Examenes-UTN/alumno_3
+sudo chmod 775 /Examenes-UTN/profesores
+cd ..
+ls -l Examenes-UTN/
+ls -l Examenes-UTN/alumno_1
+cd ~
+sudo chmod -R 750 /Examenes-UTN/alumno_1
+sudo chmod -R 760 /Examenes-UTN/alumno_2
+sudo chmod -R 700 /Examenes-UTN/alumno_3
+sudo chmod -R 775 /Examenes-UTN/profesores
+cd ..
+ls -l Examenes-UTN/
+cd Examenes-UTN/alumno_1
+cd ~
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+cd ..
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+git add .
+git commit -m "ADD: Se agrega el punto C sin el archivo validar.txt"
+git push
+cd ..
+git add .
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+git add .
+clear
+cd ..
+sudo su - p1c2_2024_A1 -c "whoami > /Examenes-UTN/alumno_1/validar.txt"
+sudo cat /Examenes-UTN/alumno_1/validar.txt
+sudo su -c "whoami > /Examenes-UTN/alumno_2/validar.txt" p1c2_2024_A2
+sudo cat /Examenes-UTN/alumno_2/validar.txt
+sudo su -c "whoami > /Examenes-UTN/alumno_3/validar.txt" p1c2_2024_A3
+sudo cat /Examenes-UTN/alumno_3/validar.txt
+sudo su -c "whoami > /Examenes-UTN/profesores/validar.txt" p1c2_2024_P1
+sudo cat /Examenes-UTN/profesores/validar.txt
+sudo su -c "whoami >> /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_P1
+history
+history | sed -n '407,490p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_C.sh 
+cat  repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_C.sh 
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+git status
+git add .
+git commit -m "ADD: Se agrega el punto C"
+git push 
+cd ..
+mkdir -p Estructura_Asimetrica/{correo/{cartas_{1..100}, carteros_{1..10}}, clientes/{cartas_{1..100}}
+tree Estructura_Asimetrica/
+rm -r Estructura_Asimetrica/
+ls
+rm -rf Estructura_Asimetrica/
+ls
+rm -r clientes/
+ls
+rm -r carteros_1
+rm -r ~/carteros_*
+ls
+mkdir -p Estructura_Asimetrica/{correo/{cartas_{1..100}, carteros_{1..10}}, clientes/{cartas_{1..100}}}
+tree Estructura_Asimetrica/
+rm -r Estructura_Asimetrica/
+ls
+rm -r ~/carteros_*
+ls
+rm -r clientes
+ls
+mkdir -p Estructura_Asimetrica/{correo/cartas_{1..100}, carteros_{1..10}}, clientes/cartas_{1..100}}
+tree Estructura_Asimetrica/
+rm -r Estructura_Asimetrica/
+ls
+rm -r ~/carteros_*
+ls
+rm -r clientes
+ls
+mkdir -p Estructura_Asimetrica/{correo, clientes}/cartas_{1..100}, correo/carteros_{1..10}}
+tree Estructura_Asimetrica/
+rm -r Estructura_Asimetrica/
+ls
+rm -r clientes
+rm -r clientes}
+ls
+rm -r correo
+ls
+mkdir -p Estructura_Asimetrica/{correo/{cartas_{1..100},carteros_{1..10}},clientes/cartas_{1..100}}
+tree Estructura_Asimetrica/
+history
+tree Estructura_Asimetrica/ --noreport | pr -T -s' ' -w 80 --column 4
+history
+history | sed -n '536p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_D.sh
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_D.sh
+history | sed -n '539p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_D.sh
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_D.sh
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/
+git add .
+git status
+git commit "ADD: Se agrega el punto D"
+git commit -m "ADD: Se agrega el punto D"
+git push
+cd ..
+grep MemTotal /proc/meminfo > ~/repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Basico.txt
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Basico.txt 
+sudo dmidecode -t chassis | grep Manufacturer >> Filtro_Basico.txt
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Basico.txt 
+sudo dmidecode -t chassis | grep Manufacturer >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Basico.txt 
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Basico.txt 
+history
+history | sed -n '552p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_E.sh
+history | sed -n '556p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_E.sh
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_E.sh
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+git status
+git add .
+git commit -m "ADD: Se agrega el punto E"
+git push
+cd ..
+echo "Mi IP Publica es: $(curl -s ifconfig.me)" > repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+echo "Mi usuario es: $(whoami)" >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+echo "El Hash de mi usuario es: $(sudo grep $(whoami) /etc/shadow | awk -F ':' '{ print $2 }')" >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+git remote get-url origin
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+git remote get-url origin
+echo "La URL de mi repositorio es: $(git remote get-url origin)" >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+cd ..
+echo "La URL de mi repositorio es: $(git remote get-url origin)" >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+echo "La URL de mi repositorio es: https://github.com/NicoleCastiglione/UTNFRA_SO_1P2C_2024_Castiglione.git" >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt
+sed -i '3d' Filtro_Avanzado.txt
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/
+ls
+cd Filtro_Avanzado.txt
+sed -i '3d' Filtro_Avanzado.txt
+cat Filtro_Avanzado.txt 
+sed -i '3d' Filtro_Avanzado.txt
+cat Filtro_Avanzado.txt 
+sed -i '3d' Filtro_Avanzado.txt
+cat Filtro_Avanzado.txt 
+echo "El Hash de mi usuario es: $(sudo grep $(whoami) /etc/shadow | awk -F ':' '{ print $2 }')" >> Filtro_Avanzado.txt
+cat Filtro_Avanzado.txt 
+echo "La URL de mi repositorio es: https://github.com/NicoleCastiglione/UTNFRA_SO_1P2C_2024_Castiglione.git" >> Filtro_Avanzado.txt
+cat Filtro_Avanzado.txt 
+history
+cd ..
+cd..
+cd ..
+history | sed -n '568p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_F.sh
+history | sed -n '570p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_F.sh
+history | sed -n '572p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_F.sh
+history | sed -n '594p' | awk '{$1=""; print $0}' | sed 's/^ //' >> repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_F.sh
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_F.sh
+cat repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_ARCHIVOS_Examen_20241006/Filtro_Avanzado.txt 
+git status
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+git status
+git add .
+git commit -m "ADD: Se agrega el punto F"
+git push
+cat << EOF >> README.md
+Nombre: Nicole
+Apellido: CastiglioneLegajo:
+División:
+
+cat README.md
+cat << EOF >> README.md
+\nNombre: Nicole
+Apellido: Castiglione
+Legajo: 117628
+División: 318
+EOF
+
+cat README.md
+sed -i '1i # UTNFRA_SO_1P2C_2024_Castiglione\n\nNombre: Nicole' README.md
+cat README.md
+sed -i '/# UTNFRA_SO_1P2C_2024_Castiglione\\nNombre: Nicole/d' README.md
+cat README.md
+git status
+git add .
+git commit -m "feat: Se incluye la información del alumno"
+git push
+history
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_A.sh 
+cat Punto_A.sh 
+vim Punto_B.sh 
+clear
+ls
+cd 
+clear
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/
+ls
+cat Punto_A.sh 
+clear
+ls
+clear
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+clear
+ls
+vim Punto_A.sh 
+clear
+vim Punto_F.sh 
+ls
+cd ..
+ls
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+rm -rf Filtro_Avanzado.txt 
+rm -rf Filtro_Basico.txt 
+ls
+cd ..
+ls
+cd RTA_SCRIPT_Examen_20241006/
+clear
+ls
+./Punto_F.sh
+sudo ./Punto_F.sh
+sudo Punto_F.sh
+bash Punto_F.sh 
+ls
+cd ..
+ls
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+cat Filtro_Avanzado.txt 
+cd ..
+ls
+cd RTA_Sc
+cd RTA_SCRIPT_Examen_20241006/
+ls
+clear
+ls
+cat Punto_A.sh 
+clear
+ls
+vim Punto_E.sh 
+ls
+bash Punto_E.sh 
+ls
+cd ..
+ls
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+cat Filtro_Basico.txt 
+cd ..
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_B.sh 
+vim Punto_D.sh 
+clear
+cd 
+clear
+ls
+rm - rf Estructura_Asimetrica/
+sudo rm - rf Estructura_Asimetrica/
+sudo rm -rf Estructura_Asimetrica/
+clear
+ls
+rm -rf Filtro_Basico.txt 
+clear
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/
+ls
+clear
+bash Punto_D.sh 
+cd 
+ls
+tree Estructura_Asimetrica/
+clear
+ls
+rm -rf Estructura_Asimetrica/
+clear
+cd repogit/UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+clear
+ls
+clear
+ls
+cd 
+clear
+sudo fdisk -l
+cat /etc/fstab 
+sudo vim /etc/fstab 
+cat /etc/fstab 
+sudo mount -a
+clear
+sudo fdisk -l /dev/vdb
+wipefs -a /dev/vdb
+sudo wipefs -a /dev/vdb
+lsblk -f
+sudo umount /dev/vdb1
+sudo umount /dev/vdb2
+sudo umount /dev/vdb3
+sudo umount /dev/vdb5
+sudo umount /dev/vdb6
+sudo umount /dev/vdb7
+sudo umount /dev/vdb8
+sudo umount /dev/vdb9
+sudo umount /dev/vdb10
+sudo umount /dev/vdb11
+clear
+lsblk -f
+clear
+sudo wipefs -a /dev/vdb
+clear
+sudo fdisk -l 
+clear
+ls
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_B.sh 
+bash Punto_B.sh 
+clear
+sudo fdisk -l /dev/vdb
+sudo wipefs -a /dev/vdb
+sudo fdisk -l /dev/vdb
+clear
+vim Punto_B.sh 
+bash Punto_B.sh 
+clear
+sudo fdisk -l /dev/vdb
+clear
+sudo wipefs -a /dev/vdb
+clear
+vim Punto_B.sh 
+bash Punto_B.sh 
+cat /etc/fstab 
+clear
+sudo echo "hola" >> /etc/fstab 
+sudo echo "hola" | sudo tee -a /etc/fstab
+cat /etc/fstab 
+sudo vim /etc/fstab 
+vim Punto_B.sh 
+sudo wipefs -a /dev/vdb
+clear
+bash Punto_B.sh 
+cat /etc/fstab 
+mount -a
+sudo mount -a
+lsblk -f /dev/vdb
+clear
+lsblk -f /dev/vdb
+sudo umount /dev/vdb1
+lsblk -f /dev/vdb
+clear
+sudo wipefs -a /dev/vdb
+clear
+vim Punto_B.sh 
+bash Punto_B.sh 
+clear
+sudo umount /dev/vdb1
+lsblk -f /dev/vdb
+clear
+vim Punto_B.sh 
+sudo wipefs -a /dev/vdb
+clear
+lsblk -f /dev/vdb
+clear
+sudo fdisk -l /dev/vdb
+clear
+bash Punto_B.sh 
+sudo fdisk -l /dev/vdb
+lsblk -f /dev/vdb
+clear
+sudo wipefs -a /dev/vdb
+sudo umount /dev/vdb1
+sudo umount /dev/vdb2
+sudo umount /dev/vdb3
+sudo umount /dev/vdb5
+sudo umount /dev/vdb6
+sudo umount /dev/vdb7
+sudo umount /dev/vdb8
+sudo umount /dev/vdb9
+sudo umount /dev/vdb10
+sudo umount /dev/vdb11
+sudo wipefs -a /dev/vdb
+clear
+lsblk -f /dev/vdb
+clear
+sudo fdisk -l /dev/vbd
+sudo fdisk -l /dev/vdb
+clear
+bash Punto_B.sh 
+sudo umount /dev/vdb1
+sudo umount /dev/vdb2
+sudo umount /dev/vdb3
+sudo umount /dev/vdb5
+sudo umount /dev/vdb6
+sudo umount /dev/vdb7
+sudo umount /dev/vdb8
+sudo umount /dev/vdb9
+sudo umount /dev/vdb10
+sudo umount /dev/vdb11
+sudo wipefs -a /dev/vdb
+clear
+lsblk -f /dev/vdb
+clear
+vim Punto_B.sh 
+bash Punto_B.sh 
+lsblk -f /dev/vdb
+vim Punto_B.sh 
+clear
+cat /etc/fstab 
+sudo vim /etc/fstab 
+bash Punto_B.sh 
+sudo umount /dev/vdb1
+sudo umount /dev/vdb2
+sudo umount /dev/vdb3
+sudo umount /dev/vdb5
+sudo umount /dev/vdb6
+sudo umount /dev/vdb7
+sudo umount /dev/vdb8
+sudo umount /dev/vdb9
+sudo umount /dev/vdb10
+sudo umount /dev/vdb11
+sudo wipefs -a /dev/vdb
+clear
+sudo fdisk /dev/vdb
+clear
+sudo vim /etc/fstab 
+clear
+bash Punto_B.sh 
+sudo mount -a
+clear
+cd 
+clear
+cd repogit/
+ls
+git status
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+git status
+ls
+cd RTA_ARCHIVOS_Examen_20241006/
+ls
+cat Filtro_Avanzado.txt 
+cat Filtro_Basico.txt 
+clear
+cd ..
+clear
+git status
+clear
+git add .
+git commit -m "fix: Se corrigen los scripts"
+git push
+clear
+ls
+cd ..
+cd 
+clear
+ls
+cd Scripts/
+ls
+bash obtener_usuarios.sh 
+vim obtener_usuarios.sh 
+bash obtener_usuarios.sh 
+sudo bash obtener_usuarios.sh 
+cd 
+bash Scripts/obtener_usuarios.sh 
+history | grep obtener_ 
+clear
+bash Scripts/obtener_usuarios.sh 
+cat Scripts/obtener_usuarios.sh 
+vim obtener_usuarios.sh 
+ls
+cd Scripts/
+ls
+vim obtener_usuarios.sh 
+bash obtener_usuarios.sh 
+vim obtener_usuarios.sh 
+bash obtener_usuarios.sh 
+clear
+cd 
+clear
+cd Scripts/
+bash obtener_usuarios.sh 
+sudo userdel -r p1c2_2024_P1
+sudo userdel p1c2_2024_P1
+bash obtener_usuarios.sh 
+sudo userdel p1c2_2024_A3
+sudo userdel p1c2_2024_A2
+sudo userdel p1c2_2024_A1
+bash obtener_usuarios.sh 
+clear
+cd 
+clear
+tree /Examenes-UTN/
+sudo rm -rf /Examenes-UTN/
+lsblk -f /dev/vdb
+sudo umount /dev/vdb1
+sudo umount /dev/vdb2
+sudo umount /dev/vdb3
+sudo umount /dev/vdb5
+sudo umount /dev/vdb6
+sudo umount /dev/vdb7
+sudo umount /dev/vdb8
+sudo umount /dev/vdb9
+sudo umount /dev/vdb10
+sudo umount /dev/vdb11
+sudo rm -rf /Examenes-UTN/
+cd ..
+ls
+ll
+cd 
+clear
+bash repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/
+bash repogit/UTNFRA_SO_1P2C_2024_Castiglione/RTA_SCRIPT_Examen_20241006/Punto_A.sh 
+tree /Examenes-UTN/
+clear
+bash obtener_usuarios.sh 
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+cd RTA_SCRIPT_Examen_20241006/
+ls
+vim Punto_C.sh 
+bash Punto_C.sh 
+bash obtener_password.sh nicolecastiglione
+bash obtener_password.sh p1c2_2024_A1
+bash obtener_password.sh p1c2_2024_A2
+bash obtener_password.sh p1c2_2024_A3
+clear
+sudo userdel p1c2_2024_A1
+sudo userdel p1c2_2024_A2
+sudo userdel p1c2_2024_A3
+sudo userdel p1c2_2024_P1
+bash obtener_usuarios.sh 
+clear
+ls
+vim Punto_C.sh 
+vim Punto_B.sh 
+bash obtener_usuarios.sh 
+bash Punto_C.sh 
+sudo cat /Examenes-UTN/alumno_1/validar.txt
+sudo cat /Examenes-UTN/alumno_2/validar.txt
+sudo cat /Examenes-UTN/alumno_3/validar.txt
+sudo cat /Examenes-UTN/profesores/validar.txt
+clear
+sudo su -c "whoami > /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_P1
+sudo su -c "whoami > /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_A2
+sudo su -c "whoami > /Examenes-UTN/alumno_1/validar.txt" p1c2_2024_A3
+clear
+cd 
+clear
+cd repogit/
+ls
+cd UTNFRA_SO_1P2C_2024_Castiglione/
+ls
+clear
+git status
+git add .
+git commit -m "fix: Fixeado el Script del punto C"
+git push
+clear
+cd 
+clear
+history -a
+cat $HOME/.bash_history
+clear
