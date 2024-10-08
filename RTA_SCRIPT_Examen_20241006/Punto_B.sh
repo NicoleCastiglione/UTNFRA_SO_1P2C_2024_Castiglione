@@ -1,60 +1,93 @@
-sudo fdisk -l
-fdisk /dev/vdb
-sudo fdisk /dev/vdb
-sudo fdisk -l /dev/vdb
-mkfs.ext4 /dev/vdb1 /dev/vdb2
-sudo fdisk -l /dev/vdb
-mkfs.ext4 /dev/vdb1
-sudo mkfs.ext4 /dev/vdb1
-sudo fdisk -l /dev/vdb
-sudo mkfs.ext4 /dev/vdb2
-sudo mkfs.ext4 /dev/vdb3
-sudo mkfs.ext4 /dev/vdb5
-sudo mkfs.ext4 /dev/vdb6
-sudo mkfs.ext4 /dev/vdb7
-sudo mkfs.ext4 /dev/vdb8
-sudo mkfs.ext4 /dev/vdb9
-sudo mkfs.ext4 /dev/vdb10
-sudo mkfs.ext4 /dev/vdb11
-lsblk
-lsblk -f
-sudo vim /etc/fstab
-ls
-cd repogit/
-ls
-cd UTNFRA_SO_1P2C_2024_Castiglione/
-ls
-cd RTA_ARCHIVOS_Examen_20241006/
-LS
-ls
-cd ..
-ls
-cd /Examenes-UTN/
-ls
-tree .
-cd alumno_1/parcial_1
-pwd
-lsblk -f
-clear
-lsblk -f
-clear
-cd /Examenes-UTN/alumno_1/parcial_1/
-clear
-pwd
-clear
-lsblk -f
-clear
-sudo fdisk -l /dev/vdb
-clear
-cd
-clear
-sudo vim /etc/fstab
-cat /etc/fstab
-mount -a
+#!/bin/bash
+
+DISK="/dev/vdb"
+SIZE="+1G"
+
+# Creacion de particiones
+sudo fdisk $DISK << PARTITIONS
+n
+p
+1
+
+$SIZE
+n
+p
+2
+
+$SIZE
+n
+p
+3
+
+$SIZE
+n
+e
+4
+
+n
+l
+
+$SIZE
+n
+l
+
+$SIZE
+n
+l
+
+$SIZE
+n
+l
+
+$SIZE
+n
+l
+
+$SIZE
+n
+l
+
+$SIZE
+n
+l
+
+$SIZE
+n
+l
+
+
+w
+PARTITIONS
+
+# Formateo de particiones
+sudo mkfs.ext4 ${DISK}1
+sudo mkfs.ext4 ${DISK}2
+sudo mkfs.ext4 ${DISK}3
+sudo mkfs.ext4 ${DISK}5
+sudo mkfs.ext4 ${DISK}6
+sudo mkfs.ext4 ${DISK}7
+sudo mkfs.ext4 ${DISK}8
+sudo mkfs.ext4 ${DISK}9
+sudo mkfs.ext4 ${DISK}10
+sudo mkfs.ext4 ${DISK}11
+
+# Escribir en /etc/fstab para indicar donde se montaran las particiones
+echo "${DISK}1     /Examenes-UTN/alumno_1/parcial_1	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}2     /Examenes-UTN/alumno_1/parcial_2	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}3     /Examenes-UTN/alumno_1/parcial_3	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}5     /Examenes-UTN/alumno_2/parcial_1	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}6     /Examenes-UTN/alumno_2/parcial_2	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}7     /Examenes-UTN/alumno_2/parcial_3	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}8     /Examenes-UTN/alumno_3/parcial_1	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}9     /Examenes-UTN/alumno_3/parcial_2	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}10    /Examenes-UTN/alumno_3/parcial_3	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+echo "${DISK}11    /Examenes-UTN/profesores	ext4	defaults	0 0" | sudo tee -a /etc/fstab
+
+# Montar particiones de forma persistente
 sudo mount -a
-clear
-sudo mount -a
-clear
-cat /etc/fstab
-clear
-lsblk -f
+
+# Mostrar resultado
+lsblk -f $DISK
+
+echo "Fin Punto B"
+

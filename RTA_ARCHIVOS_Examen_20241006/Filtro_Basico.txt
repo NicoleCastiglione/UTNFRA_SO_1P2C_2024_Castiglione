@@ -1,2 +1,2 @@
-MemTotal:        8110752 kB
+MemTotal:        8110748 kB
 	Manufacturer: QEMU
